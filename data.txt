@@ -1,0 +1,37 @@
+/* IMPOSTAZIONE DATABASE PER UN CONCESSIONARIO DI AUTO */
+
+//identificativo AUTO
+
+id-BIGINT-PRIMARY KEY-NOYNULL
+
+//nome veicolo
+
+NAME- VARCHAR(20)-NOTNULL
+
+//prezzo
+
+PRICE- DECIMAL(6,2)-NOTNULL
+
+//numero di serie per veicolo
+
+SERIES- VARCHAR(30)-NOTNULL-INDEX //do qua l'indice per poter vedere tutte le auto di quella serie a ricerca
+
+//anno fabbricazione
+
+YEAR-YEAR-NOTNULL
+
+//velocità 
+
+KM/H-SMALLINT-NOTNULL
+
+//peso veicolo
+
+WEIGHT-SMALLINT-NOTNULL
+
+//foto veicolo
+
+POSTER-TEXT-DEFAUT-(http://)
+
+//descrizione estetica ed eventuali confrot exstra
+
+DESCRIPTION-TEXT-NULL
